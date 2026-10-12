@@ -1,0 +1,6 @@
+id = "hello"
+name = "Hello Pack"
+version = "0.1.0"
+min_core = "0.1.0"
+entry = "hello_pack:register"
+python_path = "python"

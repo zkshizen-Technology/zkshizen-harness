@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zkshizen-harness"
+version = "0.1.0"
+description = "Self-hosted AI agent harness with web, admin and CLI channels, installable packs and signed licenses."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "zkshizen" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Framework :: FastAPI",
+]
+dependencies = [
+    "fastapi>=0.115,<0.116",
+    "uvicorn[standard]>=0.32,<0.33",
+    "pydantic>=2.10,<3",
+    "httpx>=0.28,<0.29",
+    "cryptography>=44,<45",
+    "pypdf>=5.1,<6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<9"]
+
+[project.scripts]
+zks = "zkshizen.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["zkshizen*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

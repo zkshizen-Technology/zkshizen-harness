@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data and secrets
+*.db
+*.db-wal
+*.db-shm
+llm.json
+license.json
+config.json
+machine_id
+.env
+.env.*
