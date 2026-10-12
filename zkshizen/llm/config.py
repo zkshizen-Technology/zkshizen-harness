@@ -60,7 +60,7 @@ class LLMProfile:
     timeout_s: float = 60.0
     token_param: str = "max_tokens"  # OpenAI reasoning models need max_completion_tokens
     # Anthropic only: "x-api-key" (api.anthropic.com) or "bearer" (Authorization: Bearer,
-    # what Claude Code sends for ANTHROPIC_AUTH_TOKEN; used by some Anthropic-compatible proxies).
+    # what Anthropic SDK clients send for ANTHROPIC_AUTH_TOKEN; used by some Anthropic-compatible proxies).
     auth: str = "x-api-key"
 
     def masked(self) -> dict[str, Any]:
