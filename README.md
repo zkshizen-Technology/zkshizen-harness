@@ -41,12 +41,18 @@ Installer scripts (they create a private venv, or use pipx if available):
 # Linux / macOS, from a checkout
 ./install/install.sh
 # or from a git URL
-./install/install.sh https://example.com/you/zkshizen-harness.git
+./install/install.sh https://github.com/zkshizen-Technology/zkshizen-harness.git
 ```
 
 ```powershell
 # Windows
 powershell -ExecutionPolicy Bypass -File install\install.ps1
+```
+
+Direct install with pip:
+
+```sh
+pip install "git+https://github.com/zkshizen-Technology/zkshizen-harness.git"
 ```
 
 Manual install with pipx:

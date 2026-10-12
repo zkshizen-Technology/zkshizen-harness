@@ -1,7 +1,7 @@
 # Install the zkshizen harness for the current user (Windows).
 #
 #   powershell -ExecutionPolicy Bypass -File install\install.ps1             from this checkout
-#   powershell -ExecutionPolicy Bypass -File install\install.ps1 <git-url>   from a git repository
+#   powershell -ExecutionPolicy Bypass -File install\install.ps1 <git-url>   from a git repository (e.g. https://github.com/zkshizen-Technology/zkshizen-harness.git)
 #
 # Uses pipx when available, otherwise a private venv in
 # %LOCALAPPDATA%\zkshizen\venv plus a zks.cmd shim in %LOCALAPPDATA%\zkshizen\bin.

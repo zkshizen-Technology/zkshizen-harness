@@ -2,7 +2,7 @@
 # Install the zkshizen harness for the current user (Linux / macOS).
 #
 #   ./install/install.sh               install from this checkout
-#   ./install/install.sh <git-url>     install from a git repository
+#   ./install/install.sh <git-url>     install from a git repository (e.g. https://github.com/zkshizen-Technology/zkshizen-harness.git)
 #
 # Uses pipx when available, otherwise a private venv in
 # ~/.local/share/zkshizen/venv with `zks` symlinked into ~/.local/bin.
