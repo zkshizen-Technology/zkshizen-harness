@@ -32,14 +32,8 @@ Homepage = "https://github.com/zkshizen-Technology/zkshizen-harness"
 Repository = "https://github.com/zkshizen-Technology/zkshizen-harness"
 Issues = "https://github.com/zkshizen-Technology/zkshizen-harness/issues"
 
-[project.optional-dependencies]
-test = ["pytest>=8.3,<9"]
-
 [project.scripts]
 zks = "zkshizen.cli.main:main"
 
 [tool.setuptools.packages.find]
 include = ["zkshizen*"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]

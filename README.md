@@ -69,8 +69,6 @@ python3 -m venv .venv
 pip install .
 ```
 
-For development: `pip install -e ".[test]"` and `python -m pytest tests -q`.
-
 ## Quickstart
 
 ```sh
@@ -117,15 +115,14 @@ see it:
 
 ```markdown
 ---
-name: hello-skill
-description: Greets the user and explains what the assistant can do.
+name: my-skill
+description: One line telling the agent when to use this skill.
 channels: [web, cli]
 ---
 Instructions for the model...
 ```
 
-Skills live in `<data_dir>/skills/` or inside a pack. See
-`examples/skills/hello-skill/`.
+Skills live in `<data_dir>/skills/` or inside a pack.
 
 ## Packs
 
@@ -183,8 +180,7 @@ Notes for pack authors:
 - A pack whose entry function raises is listed as not loaded; the harness keeps
   running.
 
-See `examples/packs/hello-pack/` for a working pack. Zip the folder and run
-`zks pack install hello-pack.zip`.
+Zip the pack folder and run `zks pack install <pack>.zip`.
 
 ### Licensed packs
 
